@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76F33501186879F0008252CB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F33500186879F0008252CB /* Cocoa.framework */; };
+		76F3350B186879F0008252CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76F33509186879F0008252CB /* InfoPlist.strings */; };
+		76F3350D186879F0008252CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F3350C186879F0008252CB /* main.m */; };
+		76F33511186879F0008252CB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 76F3350F186879F0008252CB /* Credits.rtf */; };
+		76F33514186879F0008252CB /* TNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F33513186879F0008252CB /* TNAppDelegate.m */; };
+		76F33517186879F1008252CB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76F33515186879F1008252CB /* MainMenu.xib */; };
+		76F33519186879F1008252CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F33518186879F1008252CB /* Images.xcassets */; };
+		76F33520186879F1008252CB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F3351F186879F1008252CB /* XCTest.framework */; };
+		76F33521186879F1008252CB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F33500186879F0008252CB /* Cocoa.framework */; };
+		76F33529186879F1008252CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76F33527186879F1008252CB /* InfoPlist.strings */; };
+		76F3352B186879F1008252CB /* PSDExtractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F3352A186879F1008252CB /* PSDExtractorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76F33522186879F1008252CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76F334F5186879F0008252CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76F334FC186879F0008252CB;
+			remoteInfo = PSDExtractor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76F334FD186879F0008252CB /* PSDExtractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSDExtractor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F33500186879F0008252CB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		76F33503186879F0008252CB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		76F33504186879F0008252CB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		76F33505186879F0008252CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		76F33508186879F0008252CB /* PSDExtractor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PSDExtractor-Info.plist"; sourceTree = "<group>"; };
+		76F3350A186879F0008252CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		76F3350C186879F0008252CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76F3350E186879F0008252CB /* PSDExtractor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PSDExtractor-Prefix.pch"; sourceTree = "<group>"; };
+		76F33510186879F0008252CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		76F33512186879F0008252CB /* TNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNAppDelegate.h; sourceTree = "<group>"; };
+		76F33513186879F0008252CB /* TNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNAppDelegate.m; sourceTree = "<group>"; };
+		76F33516186879F1008252CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		76F33518186879F1008252CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		76F3351E186879F1008252CB /* PSDExtractorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSDExtractorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F3351F186879F1008252CB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		76F33526186879F1008252CB /* PSDExtractorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PSDExtractorTests-Info.plist"; sourceTree = "<group>"; };
+		76F33528186879F1008252CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		76F3352A186879F1008252CB /* PSDExtractorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSDExtractorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76F334FA186879F0008252CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F33501186879F0008252CB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F3351B186879F1008252CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F33521186879F1008252CB /* Cocoa.framework in Frameworks */,
+				76F33520186879F1008252CB /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76F334F4186879F0008252CB = {
+			isa = PBXGroup;
+			children = (
+				76F33506186879F0008252CB /* PSDExtractor */,
+				76F33524186879F1008252CB /* PSDExtractorTests */,
+				76F334FF186879F0008252CB /* Frameworks */,
+				76F334FE186879F0008252CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76F334FE186879F0008252CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76F334FD186879F0008252CB /* PSDExtractor.app */,
+				76F3351E186879F1008252CB /* PSDExtractorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76F334FF186879F0008252CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76F33500186879F0008252CB /* Cocoa.framework */,
+				76F3351F186879F1008252CB /* XCTest.framework */,
+				76F33502186879F0008252CB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76F33502186879F0008252CB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76F33503186879F0008252CB /* AppKit.framework */,
+				76F33504186879F0008252CB /* CoreData.framework */,
+				76F33505186879F0008252CB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		76F33506186879F0008252CB /* PSDExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				76F33512186879F0008252CB /* TNAppDelegate.h */,
+				76F33513186879F0008252CB /* TNAppDelegate.m */,
+				76F33515186879F1008252CB /* MainMenu.xib */,
+				76F33518186879F1008252CB /* Images.xcassets */,
+				76F33507186879F0008252CB /* Supporting Files */,
+			);
+			path = PSDExtractor;
+			sourceTree = "<group>";
+		};
+		76F33507186879F0008252CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76F33508186879F0008252CB /* PSDExtractor-Info.plist */,
+				76F33509186879F0008252CB /* InfoPlist.strings */,
+				76F3350C186879F0008252CB /* main.m */,
+				76F3350E186879F0008252CB /* PSDExtractor-Prefix.pch */,
+				76F3350F186879F0008252CB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76F33524186879F1008252CB /* PSDExtractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				76F3352A186879F1008252CB /* PSDExtractorTests.m */,
+				76F33525186879F1008252CB /* Supporting Files */,
+			);
+			path = PSDExtractorTests;
+			sourceTree = "<group>";
+		};
+		76F33525186879F1008252CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76F33526186879F1008252CB /* PSDExtractorTests-Info.plist */,
+				76F33527186879F1008252CB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76F334FC186879F0008252CB /* PSDExtractor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76F3352E186879F1008252CB /* Build configuration list for PBXNativeTarget "PSDExtractor" */;
+			buildPhases = (
+				76F334F9186879F0008252CB /* Sources */,
+				76F334FA186879F0008252CB /* Frameworks */,
+				76F334FB186879F0008252CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSDExtractor;
+			productName = PSDExtractor;
+			productReference = 76F334FD186879F0008252CB /* PSDExtractor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76F3351D186879F1008252CB /* PSDExtractorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76F33531186879F1008252CB /* Build configuration list for PBXNativeTarget "PSDExtractorTests" */;
+			buildPhases = (
+				76F3351A186879F1008252CB /* Sources */,
+				76F3351B186879F1008252CB /* Frameworks */,
+				76F3351C186879F1008252CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76F33523186879F1008252CB /* PBXTargetDependency */,
+			);
+			name = PSDExtractorTests;
+			productName = PSDExtractorTests;
+			productReference = 76F3351E186879F1008252CB /* PSDExtractorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76F334F5186879F0008252CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "2Nova Interactive";
+				TargetAttributes = {
+					76F3351D186879F1008252CB = {
+						TestTargetID = 76F334FC186879F0008252CB;
+					};
+				};
+			};
+			buildConfigurationList = 76F334F8186879F0008252CB /* Build configuration list for PBXProject "PSDExtractor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76F334F4186879F0008252CB;
+			productRefGroup = 76F334FE186879F0008252CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76F334FC186879F0008252CB /* PSDExtractor */,
+				76F3351D186879F1008252CB /* PSDExtractorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76F334FB186879F0008252CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F3350B186879F0008252CB /* InfoPlist.strings in Resources */,
+				76F33519186879F1008252CB /* Images.xcassets in Resources */,
+				76F33511186879F0008252CB /* Credits.rtf in Resources */,
+				76F33517186879F1008252CB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F3351C186879F1008252CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F33529186879F1008252CB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76F334F9186879F0008252CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F33514186879F0008252CB /* TNAppDelegate.m in Sources */,
+				76F3350D186879F0008252CB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F3351A186879F1008252CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F3352B186879F1008252CB /* PSDExtractorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76F33523186879F1008252CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76F334FC186879F0008252CB /* PSDExtractor */;
+			targetProxy = 76F33522186879F1008252CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76F33509186879F0008252CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76F3350A186879F0008252CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		76F3350F186879F0008252CB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76F33510186879F0008252CB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		76F33515186879F1008252CB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76F33516186879F1008252CB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		76F33527186879F1008252CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76F33528186879F1008252CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76F3352C186879F1008252CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		76F3352D186879F1008252CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		76F3352F186879F1008252CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSDExtractor/PSDExtractor-Prefix.pch";
+				INFOPLIST_FILE = "PSDExtractor/PSDExtractor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		76F33530186879F1008252CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSDExtractor/PSDExtractor-Prefix.pch";
+				INFOPLIST_FILE = "PSDExtractor/PSDExtractor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		76F33532186879F1008252CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PSDExtractor.app/Contents/MacOS/PSDExtractor";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSDExtractor/PSDExtractor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PSDExtractorTests/PSDExtractorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		76F33533186879F1008252CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PSDExtractor.app/Contents/MacOS/PSDExtractor";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSDExtractor/PSDExtractor-Prefix.pch";
+				INFOPLIST_FILE = "PSDExtractorTests/PSDExtractorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76F334F8186879F0008252CB /* Build configuration list for PBXProject "PSDExtractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76F3352C186879F1008252CB /* Debug */,
+				76F3352D186879F1008252CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76F3352E186879F1008252CB /* Build configuration list for PBXNativeTarget "PSDExtractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76F3352F186879F1008252CB /* Debug */,
+				76F33530186879F1008252CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76F33531186879F1008252CB /* Build configuration list for PBXNativeTarget "PSDExtractorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76F33532186879F1008252CB /* Debug */,
+				76F33533186879F1008252CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76F334F5186879F0008252CB /* Project object */;
+}
