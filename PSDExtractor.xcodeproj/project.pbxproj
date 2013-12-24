@@ -31,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		761CA9D31869E8270004A175 /* PhotoshopCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoshopCC.h; sourceTree = "<group>"; };
 		76F334FD186879F0008252CB /* PSDExtractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSDExtractor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F33500186879F0008252CB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		76F33503186879F0008252CB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -115,6 +116,7 @@
 		76F33506186879F0008252CB /* PSDExtractor */ = {
 			isa = PBXGroup;
 			children = (
+				761CA9D31869E8270004A175 /* PhotoshopCC.h */,
 				76F33512186879F0008252CB /* TNAppDelegate.h */,
 				76F33513186879F0008252CB /* TNAppDelegate.m */,
 				76F33515186879F1008252CB /* MainMenu.xib */,
@@ -465,6 +467,7 @@
 				76F33530186879F1008252CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76F33531186879F1008252CB /* Build configuration list for PBXNativeTarget "PSDExtractorTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +476,7 @@
 				76F33533186879F1008252CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
