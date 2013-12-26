@@ -1164,7 +1164,7 @@ typedef enum IllustratorCC IllustratorCC __attribute__((deprecated));
 - (IllustratorCCMatrix *) getRotationMatrixAngle:(double)angle;  // Returns a rotation transformation matrix
 - (IllustratorCCMatrix *) getScaleMatrixHorizontalScale:(double)horizontalScale verticalScale:(double)verticalScale;  // Returns a scale transformation matrix
 - (IllustratorCCMatrix *) getTranslationMatrixDeltaX:(double)deltaX deltaY:(double)deltaY;  // Returns a translation matrix
-- (void) copy NS_RETURNS_NOT_RETAINED;  // Copy current selection to the clipboard
+- (void) copy;  // Copy current selection to the clipboard
 - (void) cut;  // Cut current selection to the clipboard
 - (NSString *) doJavascript:(id)x withArguments:(NSArray *)withArguments showDebugger:(IllustratorCCE940)showDebugger;  // execute a javascript
 - (void) doScript:(NSString *)x from:(NSString *)from dialogs:(BOOL)dialogs;  // Play an action from the Actions Palette
@@ -2173,7 +2173,6 @@ __attribute__((deprecated)) @interface IllustratorCCFont : SBObject
 @property double strokeWeight;  // line width of stroke
 @property BOOL stylisticAlternates;  // whether the OpenType stylistic alternates should be used
 @property BOOL swash;  // whether the OpenType swash should be used
-@property (copy) IllustratorCCFont *textFont;  // the text font
 @property BOOL titling;  // whether the OpenType titling alternates should be used
 @property NSInteger tracking;  // the tracking or range kerning amount in thousands of an em
 @property BOOL underline;  // whether to underline the text
@@ -2239,7 +2238,6 @@ __attribute__((deprecated)) @interface IllustratorCCFont : SBObject
 @property BOOL swash;  // whether the OpenType swash should be used
 @property NSInteger TCYHorizontal;  // the Tate-Chu-Yoko horizontal adjustment in points
 @property NSInteger TCYVertical;  // the Tate-Chu-Yoko vertical adjustment in points
-@property (copy) IllustratorCCFont *textFont;  // the text font
 @property BOOL titling;  // whether the OpenType titling alternates should be used
 @property NSInteger tracking;  // the tracking or range kerning amount in thousands of an em
 @property double Tsume;  // the percentage of space reduction around a Japanese character (100 = 100%)
@@ -2344,7 +2342,6 @@ __attribute__((deprecated)) @interface IllustratorCCFont : SBObject
 @property double strokeWeight;  // line width of stroke
 @property BOOL stylisticAlternates;  // whether the OpenType stylistic alternates should be used
 @property BOOL swash;  // whether the OpenType swash should be used
-@property (copy) IllustratorCCFont *textFont;  // the text font
 @property BOOL titling;  // whether the OpenType titling alternates should be used
 @property NSInteger tracking;  // the tracking or range kerning amount in thousands of an em
 @property BOOL underline;  // whether to underline the text
@@ -2459,7 +2456,6 @@ __attribute__((deprecated)) @interface IllustratorCCFont : SBObject
 @property BOOL stylisticAlternates;  // whether the OpenType stylistic alternates should be used
 @property BOOL swash;  // whether the OpenType swash should be used
 @property (copy) NSArray *tabStops;  // tab stop settings
-@property (copy) IllustratorCCFont *textFont;  // the text font
 @property BOOL titling;  // whether the OpenType titling alternates should be used
 @property NSInteger tracking;  // the tracking or range kerning amount in thousands of an em
 @property BOOL underline;  // whether to underline the text
@@ -2560,7 +2556,6 @@ __attribute__((deprecated)) @interface IllustratorCCFont : SBObject
 @property (copy) NSArray *tabStops;  // tab stop settings
 @property NSInteger TCYHorizontal;  // the Tate-Chu-Yoko horizontal adjustment in points
 @property NSInteger TCYVertical;  // the Tate-Chu-Yoko vertical adjustment in points
-@property (copy) IllustratorCCFont *textFont;  // the text font
 @property BOOL titling;  // whether the OpenType titling alternates should be used
 @property NSInteger tracking;  // the tracking or range kerning amount in thousands of an em
 @property double Tsume;  // the percentage of space reduction around a Japanese character (100 = 100%)
@@ -2747,7 +2742,6 @@ __attribute__((deprecated)) @interface IllustratorCCFont : SBObject
 @property double strokeWeight;  // line width of stroke
 @property BOOL stylisticAlternates;  // whether the OpenType stylistic alternates should be used
 @property BOOL swash;  // whether the OpenType swash should be used
-@property (copy) IllustratorCCFont *textFont;  // the text font
 @property BOOL titling;  // whether the OpenType titling alternates should be used
 @property NSInteger tracking;  // the tracking or range kerning amount in thousands of an em
 @property BOOL underline;  // whether to underline the text
@@ -3813,7 +3807,6 @@ __attribute__((deprecated)) @interface IllustratorCCObsolete_properties : SBObje
 @property BOOL autoKerningObsoleteUseKerningMethod __attribute__((deprecated));  // use font's built-in kerning information?
 @property IllustratorCCECHd directionObsoleteUseBaselineDirection __attribute__((deprecated));  // controls the direction of characters in a vertical text block
 @property BOOL pixelAspectRatioCorrection __attribute__((deprecated));  // adjust imported images which have a non-square pixel aspect ratio
-@property BOOL japaneseFileFormatObsolete __attribute__((deprecated));  // save using Japanese version of file format (versions 3 - 5 only) ( default: false )
 @property BOOL japaneseFileFormatObsolete __attribute__((deprecated));  // save using Japanese version of file format (versions 3 - 5 only) ( default: false )
 @property BOOL nestedLayers __attribute__((deprecated));  // preserve nested layers when exporting ( default: true )
 @property BOOL hiddenLayers __attribute__((deprecated));  // output hidden layers when exporting ( default: false )

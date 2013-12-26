@@ -1273,8 +1273,8 @@ typedef enum PhotoshopCCPT23 PhotoshopCCPT23;
 - (void) refresh;  // pause the script until the application refreshes
 - (PhotoshopCCRGBColor *) webSafeColorFor:(PhotoshopCCColorValue *)for_;  // find the closest web safe color for a color
 - (void) clear;  // clear current selection
-- (void) copy NS_RETURNS_NOT_RETAINED;  // copy current selection to the clipboard
-- (void) copyMerged NS_RETURNS_NOT_RETAINED;  // copy current selection to the clipboard. Include data in all visible layers.
+- (void) copy;  // copy current selection to the clipboard
+- (void) copyMerged;  // copy current selection to the clipboard. Include data in all visible layers.
 - (void) cut;  // cut current selection to the clipboard
 - (void) doAction:(NSString *)x from:(NSString *)from;  // play an action from the Actions Palette
 - (NSString *) doJavascript:(id)x withArguments:(NSArray *)withArguments showDebugger:(PhotoshopCCE940)showDebugger;  // execute a JavaScript
