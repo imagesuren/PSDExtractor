@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		761CA9D51869E8710004A175 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761CA9D41869E8710004A175 /* ScriptingBridge.framework */; };
+		7630E054186DDA6A00215983 /* TNExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7630E053186DDA6A00215983 /* TNExtractor.m */; };
 		76F33501186879F0008252CB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F33500186879F0008252CB /* Cocoa.framework */; };
 		76F3350B186879F0008252CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76F33509186879F0008252CB /* InfoPlist.strings */; };
 		76F3350D186879F0008252CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F3350C186879F0008252CB /* main.m */; };
@@ -35,6 +36,8 @@
 		761CA9D31869E8270004A175 /* PhotoshopCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoshopCC.h; sourceTree = "<group>"; };
 		761CA9D41869E8710004A175 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		7630E04E186C217600215983 /* IllustratorCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IllustratorCC.h; sourceTree = "<group>"; };
+		7630E052186DDA6A00215983 /* TNExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNExtractor.h; sourceTree = "<group>"; };
+		7630E053186DDA6A00215983 /* TNExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNExtractor.m; sourceTree = "<group>"; };
 		76F334FD186879F0008252CB /* PSDExtractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSDExtractor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F33500186879F0008252CB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		76F33503186879F0008252CB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -121,6 +124,8 @@
 		76F33506186879F0008252CB /* PSDExtractor */ = {
 			isa = PBXGroup;
 			children = (
+				7630E052186DDA6A00215983 /* TNExtractor.h */,
+				7630E053186DDA6A00215983 /* TNExtractor.m */,
 				7630E04E186C217600215983 /* IllustratorCC.h */,
 				761CA9D31869E8270004A175 /* PhotoshopCC.h */,
 				76F33512186879F0008252CB /* TNAppDelegate.h */,
@@ -263,6 +268,7 @@
 			files = (
 				76F33514186879F0008252CB /* TNAppDelegate.m in Sources */,
 				76F3350D186879F0008252CB /* main.m in Sources */,
+				7630E054186DDA6A00215983 /* TNExtractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

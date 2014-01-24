@@ -1733,6 +1733,7 @@ typedef enum PhotoshopCCPT23 PhotoshopCCPT23;
 - (void) scaleHorizontalScale:(double)horizontalScale verticalScale:(double)verticalScale anchorPosition:(PhotoshopCCE160)anchorPosition;
 - (void) translateDeltaX:(double)deltaX deltaY:(double)deltaY;  // moves the position relative to its current position
 - (void) unlink;  // unlink the layer
+- (void)dictionaryFromLayer;
 
 @end
 
