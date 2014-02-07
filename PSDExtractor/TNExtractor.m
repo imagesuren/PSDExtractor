@@ -61,6 +61,8 @@ static NSString * const TNFontBounds = @"bounds";
         
         self.layersCount = currentDocumentLayers.count;
         
+        
+        
         self.count = 1;
         
         for (PhotoshopCCLayer *layer in currentDocumentLayers)
@@ -79,19 +81,19 @@ static NSString * const TNFontBounds = @"bounds";
                 
                 NSString *fontName = textObject.font;
                 
-                photoshopApplication.settings.rulerUnits = PhotoshopCCE445PixelUnits;
+                NSNumber *size = @(textObject.size * self.documentFactor);
                 
-                NSNumber *x = @([layerBounds.firstObject floatValue] * self.documentFactor);
+                NSNumber *x = @([layerBounds.firstObject doubleValue] * self.documentFactor);
                 
-                NSNumber *y = @([layerBounds[1] floatValue] * self.documentFactor);
+                NSNumber *y = @([layerBounds[1] doubleValue] * self.documentFactor);
                 
-                NSNumber *width = @(([layerBounds[2] floatValue] - [layerBounds.firstObject floatValue]) * self.documentFactor);
+                NSNumber *width = @(([layerBounds[2] doubleValue] - [layerBounds.firstObject doubleValue]) * self.documentFactor);
                 
-                NSNumber *height = @(([layerBounds[3] floatValue] - [layerBounds[1] floatValue]) * self.documentFactor);
+                NSNumber *height = @(([layerBounds[3] doubleValue] - [layerBounds[1] doubleValue]) * self.documentFactor);
                 
                 NSString *contents = textObject.contents;
                 
-                NSDictionary *layerDictionary = @{@"font": @{@"name": fontName}, @"frame": @{@"x": x, @"y": y, @"width": width, @"height": height}, @"contents": contents};
+                NSDictionary *layerDictionary = @{@"font": @{@"name": fontName}, @"frame": @{@"x": x, @"y": y, @"width": width, @"height": height}, @"size": size, @"contents": contents};
                 
                 [self.layers addObject:layerDictionary];
             }
