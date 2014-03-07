@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B98BCA1B-CF57-4BD4-B0C3-A0964B152181</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PSDExtractor</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1BAE52F5-DD54-4449-BA06-EA9E8B98F65C</key>
+		<string>https://github.com/Tulushev/PSDExtractor.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PSDExtractor.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1BAE52F5-DD54-4449-BA06-EA9E8B98F65C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Tulushev/PSDExtractor.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1BAE52F5-DD54-4449-BA06-EA9E8B98F65C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1BAE52F5-DD54-4449-BA06-EA9E8B98F65C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PSDExtractor</string>
+		</dict>
+	</array>
+</dict>
+</plist>
